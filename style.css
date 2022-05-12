@@ -97,7 +97,18 @@ i:hover {
 	padding: 10px 0 10px 0;
 }
 
-.cont {
+/* div[class^='cont'] {
+    grid-column: 2;
+
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    margin-bottom: 40px;
+
+    align-items: center;
+
+} */
+
+.cont1 {
     grid-column: 2;
 
     display: grid;
@@ -108,7 +119,31 @@ i:hover {
 
 }
 
-.cont > div {
+.cont2 {
+    grid-column: 2;
+
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    margin-bottom: 40px;
+
+    align-items: center;
+
+}
+
+.cont3 {
+    grid-column: 2;
+
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    margin-bottom: 40px;
+
+    align-items: center;
+
+}
+
+
+
+div[class^='cont'] > div {
     margin-bottom: 20px;
 }
 
@@ -131,6 +166,7 @@ i:hover {
     display: flex;
     flex-direction: column;
 } */
+
 
 /* html */
 
@@ -469,7 +505,7 @@ li {
     .avatar {
         grid-column: 1;
         grid-row: 1;
-        
+
         width: 80%;
         padding: 0;
         margin: auto;
@@ -482,6 +518,284 @@ li {
        
     }
     
+    .big-title {
+        
+        padding: 0;
+        
+    }
+    /* Affichage texte en colonne */
+    .cont1 {    
+        width: 100%;
+        grid-template-columns: 20% 80%;
+        margin-bottom: 40px;
+
+
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    div[class^='cont'] > div {
+        margin-bottom: 15px;
+    }
+
+    div[class*='title']{
+        grid-column: 2;
+        text-align: center;
+        font-size: large;
+    }
+
+    div[class*='progress']{
+        border-right: 0;
+        grid-column: 2;
+    }
+
+    div[class*='value']{
+        grid-column: 1;
+        text-align: right;
+        padding: 0 15px 0 0;
+
+    }
+
+    .htitle{ 
+        grid-row: 1;
+        
+     }
     
+    .hprogress { 
+        grid-row: 2;
+
+     }
+    .hvalue { 
+        grid-column: 1;
+        grid-row: 2;
+     }
+
+    .ctitle{ 
+        grid-row: 3;
+     }
+    
+    .cprogress { 
+        grid-row: 4;
+     }
+    .cvalue { 
+        grid-row: 4;
+     }
+
+    .ptitle{ 
+        grid-row: 5;
+     }
+    
+    .pprogress { 
+        grid-row: 6;
+     }
+    .pvalue { 
+        grid-row: 6;
+     }
+
+    .jtitle{ 
+        grid-row: 7;
+     }
+    
+    .jprogress { 
+        grid-row: 8;
+     }
+    .jvalue { 
+        grid-row: 8;
+     }
+
+     /***** FORMATION ****/
+
+     .cont2 {    
+        width: 100%;
+        grid-template-columns: 20% 80%;
+        margin-bottom: 40px;
+
+
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    div[class*='study']{
+        text-align: left;
+        border-left: #EFDF00 1px solid;
+        border-right: 0;
+        padding: 0 0 0 15px;
+        width: 100%;
+    }
+
+    div[class*='fonction']{
+        width: 100%;
+        font-size: larger;
+        font-weight: bold;
+        padding: 0 0 0 15px;
+    }
+
+     .year1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .study1{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .fonction1{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .year2{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .study2{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .fonction2{
+        grid-column: 2;
+        grid-row: 4;
+    }
+    
+    .year3{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .study3{
+        grid-column: 2;
+        grid-row: 5;
+    }
+    
+    .fonction3{
+        grid-column: 2;
+        grid-row: 6;
+    }
+    
+    .year4{
+        grid-column: 1;
+        grid-row: 7;
+    }
+    
+    .study4{
+        grid-column: 2;
+        grid-row: 7;
+    }
+    
+    .fonction4{
+        grid-column: 2;
+        grid-row: 8;
+    }
+    
+    /***** EXPERIENCE ****/
+
+
+    .cont3 {    
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-bottom: 40px;
+
+
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .cont3 li{
+        margin-bottom: 8px;
+    }
+
+    div[class*='position']{
+        grid-column: 1;
+        margin: 0;
+        text-align: right;
+        border-right: #EFDF00 1px solid;
+        border-right: 0;
+        padding: 0 15px 0 0;
+       
+    }
+
+    div[class*='when']{
+        grid-column: 2;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    div[class*='what']{
+        width: 100%;
+    
+        grid-column: 2;
+
+        margin: auto;
+        border-right: none;
+        border-left: #EFDF00 1px solid;
+
+    }
+
+
+    .position1{
+        grid-row: 2;
+        
+    }
+    
+    .what1{
+        grid-row: 2;
+        
+    }
+    
+    .when1{
+        grid-row: 1;
+    }
+    
+    .position2{
+        grid-row: 4;
+    }
+    
+    .what2{
+        grid-row: 4;
+    }
+    
+    .when2{
+        grid-row: 3;
+    }
+    
+    .position3{
+        grid-row: 6;
+    }
+    
+    .what3{
+        grid-row: 6;
+    }
+    
+    .when3{
+        grid-row: 5;
+    }
+    
+    .position4{
+        grid-row: 8;
+    }
+    
+    .what4{
+        grid-row: 8;
+    }
+    
+    .when4{
+      
+        grid-row: 7;
+    }
     
   }

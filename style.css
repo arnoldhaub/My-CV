@@ -628,17 +628,20 @@ li {
         text-align: left;
         border-left: #EFDF00 1px solid;
         border-right: 0;
-        padding: 0 0 0 15px;
-        width: 100%;
+        padding: 0 0 0 0px;
+        width: 80%;
+        text-align: center;
     }
 
     div[class*='fonction']{
         grid-column: 2;
 
-        width: 100%;
+        width: 80%;
         font-size: larger;
         font-weight: bold;
-        padding: 0 0 0 15px;
+        padding: 0 15px 0 15px;
+        border-bottom: #EFDF00 1px solid;
+        text-align: center;
     }
 
     div[class*='year']{
@@ -699,7 +702,7 @@ li {
     .cont3 {    
         width: 100%;
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 35% 65%;
         margin-bottom: 40px;
 
 
@@ -720,7 +723,7 @@ li {
         text-align: right;
         border-right: #EFDF00 1px solid;
         border-right: 0;
-        padding: 0 15px 0 0;
+        padding: 0 5px 0 0;
        
     }
 
@@ -729,11 +732,15 @@ li {
         text-align: center;
         font-size: larger;
         font-weight: bold;
-        padding: 0;
+        width: 80%;
+
+        padding: 0 15px 0 15px;
+        border-bottom: #EFDF00 1px solid;
+        text-align: center;
     }
 
     div[class*='what']{
-        width: 100%;
+        width: 80%;
     
         grid-column: 2;
 
